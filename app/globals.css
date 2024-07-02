@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
- background-color:#F2F2F2;
- margin-left:70px;
- margin-right:70px;
- margin-top:50px;
- margin-bottom:50px;
+body {
+  background-color: #f2f2f2;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
