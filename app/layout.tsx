@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import localFont from 'next/font/local';
+import Image from 'next/image';
+import Nav from '@/components/nav';
 
 const pretendard = localFont({
   src: './PretendardVariable.woff2',
@@ -22,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.variable}`}>{children}</body>
+      <body className={`${pretendard.variable}`}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
