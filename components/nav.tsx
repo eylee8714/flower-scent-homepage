@@ -7,7 +7,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between h-[100px] items-center">
       <div>
         <Image src="/logo.svg" width={150} height={100} alt="로고" />
       </div>
