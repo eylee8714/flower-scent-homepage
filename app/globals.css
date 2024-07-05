@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  :root {
+    --header-row-height: 44px;
+    --header-height: calc(var(--header-row-height) * 2);
+    --ahcitect-height: calc(100svh - var(--header-height));
+  }
+}
+
 body {
-  background-color: #f2f2f2;
-  margin-left: 70px;
-  margin-right: 70px;
+  background-color: #f0e8dd;
 }
