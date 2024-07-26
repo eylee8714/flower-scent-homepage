@@ -2,8 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  :root {
+    --header-row-height: 100px;
+    --header-height: calc(var(--header-row-height) * 2);
+    --ahcitect-height: calc(100svh - var(--header-height));
+  }
+}
+
 body {
   background-color: #f2f2f2;
   margin-left: 70px;
   margin-right: 70px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 제휴업체 스와이퍼 */
+.allianceSwiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.allianceSwiper .swiper-slide {
+  background-color: transparent;
+}
+
+/* 베이커리 스와이퍼 */
+.breadSwiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.breadSwiper .swiper-slide {
+  background-color: transparent;
+}
+
+/* 블록지정 */
+/* Code for Firefox */
+::-moz-selection {
+  color: rgb(0, 0, 0);
+  background: rgb(191, 149, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(191, 149, 255);
+}
+
+/* 호버 밑줄 */
+.linehover {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.linehover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+
+.linehover:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }

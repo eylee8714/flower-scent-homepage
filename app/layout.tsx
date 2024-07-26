@@ -2,14 +2,39 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import localFont from 'next/font/local';
-import Image from 'next/image';
 import Nav from '@/components/nav';
+import Footer from '@/components/footer';
 
 const pretendard = localFont({
-  src: './PretendardVariable.woff2',
+  src: '../public/fonts/PretendardVariable.woff2',
   display: 'swap',
   weight: '45 920',
   variable: '--font-pretendard',
+});
+const gmarketsansBold = localFont({
+  src: '../public/fonts/GmarketSansBold.woff',
+  display: 'swap',
+  weight: '45 920',
+  variable: '--font-gmarketsansBold',
+});
+const gmarketsansMedium = localFont({
+  src: '../public/fonts/GmarketSansMedium.woff',
+  display: 'swap',
+  weight: '45 920',
+  variable: '--font-gmarketsansMedium',
+});
+const gmarketsansLight = localFont({
+  src: '../public/fonts/GmarketSansLight.woff',
+  display: 'swap',
+  weight: '45 920',
+  variable: '--font-gmarketsansLight',
+});
+
+const mbc1961 = localFont({
+  src: '../public/fonts/MBC1961M.woff2',
+  display: 'swap',
+  weight: '45 920',
+  variable: '--font-mbc1961',
 });
 
 export const metadata: Metadata = {
@@ -24,9 +49,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.variable}`}>
+      {/* ${GmarketSansBold.variable} */}
+      <body
+        className={`${pretendard.variable}  ${gmarketsansBold.variable} ${gmarketsansMedium.variable}  ${gmarketsansLight.variable} ${mbc1961.variable}  font-pretendard`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
