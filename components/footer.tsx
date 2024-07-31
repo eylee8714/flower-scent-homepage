@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="bg-[#404040] py-32 px-52 text-white  cursor-default">
       <div className="flex justify-between items-center text-4xl pb-10 border-b-[1px] border-[#bbbbbb]">
         <p className="">Work with us</p>
-        <p className="mt-4 linehover cursor-pointer">flowerscent.cafe@gmail.com</p>
+        <p className="mt-4 linehover-2 cursor-pointer">flowerscent.cafe@gmail.com</p>
       </div>
       <div className="flex gap-20 py-10 border-b-[1px] border-[#bbbbbb]">
         <div>
@@ -28,12 +28,17 @@ export default function Footer() {
           <p className="text-2xl text-[#bbbbbb]">인스타그램</p>
         </div>
       </div>
-      <div className="flex items-end justify-between">
-        <p className="text-5xl pt-10">코아주식회사</p>
-        <p className="text-3xl cursor-pointer linehover" onClick={onScrollTop}>
+      <div className="flex items-end justify-between pt-10">
+        <div>
+          <p className="text-5xl">코아주식회사</p>
+          <p className="text-xl">Copyright © COA Corporation 2024</p>
+        </div>
+        <p className="text-3xl cursor-pointer linehover-2" onClick={onScrollTop}>
           Back to top ↑
         </p>
-        <p className="text-3xl">Copyright © COA Corporation 2024</p>
+        <div>
+          <p className="text-xl">Branding by © BazilBrunch Studio 2024</p>
+        </div>
       </div>
     </div>
   );

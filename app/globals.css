@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #f0e8dd;
+  background-color: rgb(247, 241, 228);
 }
 
 .swiper {
@@ -65,16 +65,35 @@ body {
   background: rgb(191, 149, 255);
 }
 
-/* 호버 밑줄 */
-.linehover {
+/* 호버 밑줄 1px*/
+.linehover-1 {
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-.linehover::after {
+.linehover-1::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+
+.linehover-1:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* 호버 밑줄 2px*/
+.linehover-2 {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.linehover-2::after {
   content: '';
   display: block;
   width: 0;
@@ -83,7 +102,7 @@ body {
   transition: width 0.3s;
 }
 
-.linehover:hover::after {
+.linehover-2:hover::after {
   width: 100%;
   transition: width 0.3s;
 }

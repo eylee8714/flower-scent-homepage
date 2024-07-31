@@ -20,13 +20,16 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 export const Bread = () => {
   return (
     <>
-      <div className="flex justify-left pt-36 pb-48 flex-col bg-[#10405a]">
+      {/* <div className="flex justify-left pt-36 pb-48 flex-col bg-flower-desert-desertdust"> */}
+      <div className="flex justify-left pt-36 pb-48 flex-col bg-flower-desert-oasisshade">
         {/* <Image alt="빵" className="w-80 mix-blend-multiply" src={OneLineBread} /> */}
         <FadeIn>
           <div className="flex justify-center items-center">
-            <div className="flex flex-col">
-              <p className="text-5xl font-mbc1961 text-[#bbbbbb] mb-10 ">베이커리도 예술이다</p>
-              <p className="text-2xl font-light font-pretendard text-[#bbbbbb]">
+            <div className="flex flex-col text-flower-desert-desertdust drop-shadow-lg">
+              {/* <div className="flex flex-col text-flower-desert-oasisshade"> */}
+
+              <p className="text-5xl font-mbc1961 mb-10">베이커리도 예술이다</p>
+              <p className="text-2xl font-light font-pretendard ">
                 매일 아침 신선한 재료와 검증된 실력으로 <br />
                 독보적인 비주얼의 베이커리를 구워내며 예술을 꽃피웁니다
               </p>
